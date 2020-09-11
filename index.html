@@ -266,7 +266,24 @@
                                     <!-- Portfolio Modal - Image-->
                                     <img class="img-fluid rounded mb-5" src="assets/img/portfolio/chess.PNG" alt="" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Chess game created in Python with Pygame. The game can be played against my own implementation of a chess engine. The engine does not currently use an opening book but still makes reasonable moves in the opening as seen in the image above. The strength of the engine on depth one is probably around 600 elo (fairly weak human player).
+                                    <p class="mb-5">Chess game created in Python with Pygame. The game can be played against my own implementation of a chess engine. My engine uses an opening book as well as a minimax algorithm with Alpha Beta Pruning. The strength of the engine will continue to rise as:
+                                        <dl>
+                                            <li>
+                                                it is made more efficient (so it can play on a higher depth).
+                                            </li>
+                                            <li>
+                                                the opening book is made larger (so it relies on less calculation and plays more accurately in the opening).
+                                            </li>
+                                            <li>
+                                                the score evaluation function gets better (with more measures contributing to the score).
+                                            </li>
+                                            <li>
+                                                logic is added to help the engine in the end game.
+                                            </li>
+                                            <li>
+                                                the application becomes multi-threaded (increasing speed of decision making)
+                                            </li>
+                                        </dl>
                                     	<br>
                                     	<br> GitHub repository:</br>
                                     	<a href="https://github.com/danielnieuwerf/Chess_Python_With_Engine" target="”_blank”">Chess</a>
