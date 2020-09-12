@@ -17,8 +17,6 @@ $header = "From: noreply@danielnieuwerf.com\n"; // This is the email address the
 $header .= "Reply-To: $email";	
 
 mail($to, $subject, $body, $header)
-if(!mail($to, $subject, $body, $header))
-  http_response_code(500);
 header("location: index.html")
 
 ?>
